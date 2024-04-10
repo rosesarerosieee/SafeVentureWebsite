@@ -213,16 +213,24 @@ body{
     top: 120vh;
 }
 
+.context1 {
+    position: relative;
+    min-width: 100%;
+    min-height: 13vh;
+    background-color: var(--color1); /* Make sure these variables are defined in your CSS or root */
+    color: var(--color2);
+    padding: 20px;
+}
 
 .Minimum{
     position: relative;
-    left: 20px;
     display: flex;
     align-items: start;
     justify-content: center;
     flex-direction: column;
     gap: 20px;
-    padding: 20px;
+    padding: 30px;
+    
 }
 .lines1{
     position: relative;
@@ -239,4 +247,42 @@ body{
 .requirements{
     font-size: 1rem;
     font-weight: lighter;
+}
+
+
+@media(min-width: 481px) and (max-width: 768px){
+    .logo{
+        font-size: 2rem;
+    }
+    .text{
+        font-size: 1.5rem;
+    }
+    .nav-link{
+        font-size: 1.5rem;
+    }
+
+    .Home{
+        padding: 150px;
+    }
+    .safe{
+        font-size: 1.9rem;
+    }
+    .venture{
+        font-size: 1.5rem;
+    }
+
+    .icons i{
+        font-size: 2.5rem;
+    }
+
+    .featuress{
+        font-size: 1.4rem;
+    }
+
+    .Minimum{
+        font-size: 1.5rem;
+    }
+    .requirements{
+        font-size: 1.4rem;
+    }
 }
