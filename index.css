@@ -147,7 +147,23 @@ body{
     min-width: 100%;
 }
 
+.systemm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.sysview{
+    min-width: 250px;
+    max-height: 350px;
+
+}
+
+
 .safe{  
+    margin-top: 150px;
     font-weight: lighter;
     font-size: 1.5rem;
 }
@@ -251,6 +267,12 @@ body{
 
 
 @media(min-width: 481px) and (max-width: 768px){
+
+    .sysview{
+        min-width: 400px;
+        max-height: 550px;
+    }
+
     .logo{
         font-size: 2rem;
     }
