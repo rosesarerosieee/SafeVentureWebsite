@@ -60,7 +60,7 @@ body{
     justify-content: start;
     margin-left: 20px;
     position: relative;
-    top:150px;
+    top:100px;
 }
 .line{
     display: block;
@@ -266,6 +266,55 @@ body{
 }
 
 
+.Manual{
+    position: relative;
+    top: 150vh; 
+}
+
+.context2{
+    position: relative;
+    min-width: 100%;
+    min-height: 13vh;
+    background-color: var(--color1); /* Make sure these variables are defined in your CSS or root */
+    color: var(--color2);
+    padding: 20px;
+}
+
+.sectionn{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.section-tittle{
+    font-size: 1.2rem;
+
+}
+
+.section-text{
+    font-size: 1rem;
+    font-weight: lighter;
+    padding-top: 20px;
+}
+
+.tab-list{
+    padding: 10px;
+    padding-left: 0;
+    font-size: 1rem;
+}
+
+.tab-list-tittle{
+    font-size: 1rem;
+}
+
+.feedback{
+    margin-top: 20px;
+}
+
+
+
 @media(min-width: 481px) and (max-width: 768px){
 
     .sysview{
@@ -307,4 +356,19 @@ body{
     .requirements{
         font-size: 1.4rem;
     }
+}
+
+@media (min-width:1024px) and (max-width: 1200px){
+  
+
+
+   .grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: min-content;
+    gap: 20px;
+   }
+   
+
+
 }
