@@ -143,7 +143,7 @@ body{
     text-align: justify;
     flex-direction: column;
     top: 200px;
-    padding: 30px;
+    padding: 40px;
     min-width: 100%;
 }
 
@@ -151,19 +151,19 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    
 }
 
 
 .sysview{
     min-width: 250px;
     max-height: 350px;
+    margin-top: 200px;
 
 }
 
 
+
 .safe{  
-    margin-top: 150px;
     font-weight: lighter;
     font-size: 1.5rem;
 }
@@ -187,6 +187,10 @@ body{
 .features {
     position: relative;
     top: 90vh;
+}
+
+.feautre-text{
+    display: none;
 }
 
 .context {
@@ -313,13 +317,17 @@ body{
     margin-top: 20px;
 }
 
-
+/* Tablet */
 
 @media(min-width: 481px) and (max-width: 768px){
 
     .sysview{
-        min-width: 400px;
-        max-height: 550px;
+        min-width: 350px;
+        max-height: 450px;
+    }
+
+    .info{
+        padding: 20px;
     }
 
     .logo{
@@ -358,17 +366,401 @@ body{
     }
 }
 
+
+/* Laptop */
+
 @media (min-width:1024px) and (max-width: 1200px){
   
+    .hamburger{
+        display: none;
+    }
 
+    .navbar{
+        background-color: var(--color1);
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .text{
+        display: none;
+    }
+    
+    .nav-menu{
+        display: flex;
+        position: relative;
+        justify-content: start;
+        align-items: center;
+        background-color: transparent;
+        flex-direction: row;
+        height: 0;
+        width: 0;
+        left: 0;
+        z-index: 10;
+        text-align: center;
+    }
+
+    .items{
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        align-items: start;
+        justify-content: start;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    .nav-link{
+        transition: 1.3s ease-in-out;
+        font-size: 1.2rem;
+    }
+
+    .nav-link:hover{
+        color: var(--color3);
+        font-size: 2rem;
+    }
+
+    #down{
+        display: none;
+    }
+
+    .tittle{
+        display: none;
+    }
+
+    .line{
+        display: none;
+    }
+
+
+    .Home {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center; 
+        gap: 20px; 
+    }
+    
+    .systemm {
+        justify-self: end; 
+    }
+
+    
+    .info {
+        display: flex;
+        flex-direction: column; 
+        justify-content: center; 
+
+    }
+    
+    .sysview{
+        margin-top: 0;
+    }
+
+    .safe{
+        font-size: 2.5rem;
+    }
+
+    .venture{
+        font-size: 1.5rem;
+    }
+
+    .context{
+        background-color: transparent;
+        padding: 50px;
+    }
 
    .grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: min-content;
     gap: 20px;
+    padding: 20px;
+   
+   }
+
+   .grid2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: min-content;
+    gap: 20px;
+    position: relative;
+    top: 50px;
    }
    
 
+   .features{
+        top: 70vh;
+   }
+
+
+   .icons i{
+    font-size: 2.5rem;
+   }
+   .featuress{
+    font-size: 1.2rem;
+   }
+
+   .features h1{
+    color: var(--color3);
+    font-size: 2.5rem;
+   }
+
+   .feautre-text{
+    display: block;
+    color: var(--color3);
+    font-size: 1.5rem;
+    }
+
+    .System{
+        top: 120vh;
+    }
+
+    .context1{
+        background-color: transparent;
+        padding: 50px;
+    }
+
+    .req{
+        color: var(--color3);
+        font-size: 2.5rem;
+    }
+
+    .Minimum h1{
+        font-size: 1.5rem;
+    }
+
+    .requirements{
+        font-size: 1.2rem;
+    }
+
+    .context2{
+        background-color: transparent;
+        padding: 50px;
+    }
+
+    .headd{
+        color: var(--color3);
+        font-size: 2.5rem;
+    }
+
+    .section-tittle{
+        font-size: 1.5rem;
+    }
+
+    .section-text{
+        font-size: 1.2rem;
+    }
+
+
+}
+
+/* big screen laptops and desktop */
+@media (min-width: 1201px){
+    .hamburger{
+        display: none;
+    }
+
+    .navbar{
+        background-color: var(--color1);
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .text{
+        display: none;
+    }
+    
+    .nav-menu{
+        display: flex;
+        position: relative;
+        justify-content: start;
+        align-items: center;
+        background-color: transparent;
+        flex-direction: row;
+        height: 0;
+        width: 0;
+        left: 0;
+        z-index: 10;
+        text-align: center;
+    }
+
+    .items{
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        align-items: start;
+        justify-content: start;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    .nav-link{
+        transition: 1.3s ease-in-out;
+        font-size: 1.4rem;
+    }
+
+    .nav-link:hover{
+        color: var(--color3);
+        font-size: 2rem;
+    }
+
+    #down{
+        display: none;
+    }
+
+    .tittle{
+        display: none;
+    }
+
+    .line{
+        display: none;
+    }
+
+
+    .Home {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center; 
+        gap: 20px; 
+        padding: 70px;
+    }
+    
+    .systemm {
+        justify-self: end; 
+    }
+
+    .sysview{
+        min-width: 350px;
+        min-height: 600px;
+        margin-top: 0;
+    }
+     
+    .info {
+        display: flex;
+        flex-direction: column; 
+        justify-content: center; 
+
+    }
+    
+   
+    .safe{
+        font-size: 3rem;
+    }
+
+    .venture{
+        font-size: 1.9rem;
+    }
+
+    .download{
+        height: 50px;
+        width: 150px;
+        font-size: 1rem;
+    }
+
+
+
+    .context{
+        background-color: transparent;
+        padding: 50px;
+    }
+
+   .grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: min-content;
+    gap: 20px;
+    padding: 20px;
+   
+   }
+
+   .grid2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: min-content;
+    gap: 20px;
+    position: relative;
+    top: 50px;
+   }
+   
+
+   .features{
+        top: 70vh;
+        padding: 50px;
+   }
+
+
+   .icons i{
+    font-size: 3rem;
+   }
+   .featuress{
+    font-size: 1.7rem;
+   }
+
+   .features h1{
+    color: var(--color3);
+    font-size: 3rem;
+   }
+
+   .feautre-text{
+    display: block;
+    color: var(--color3);
+    font-size: 2rem;
+    }
+
+    .System{
+        top: 120vh;
+        padding: 50px;
+    }
+
+    .context1{
+        background-color: transparent;
+        padding: 50px;
+    }
+
+    .req{
+        color: var(--color3);
+        font-size: 3rem;
+    }
+
+    .Minimum h1{
+        font-size: 3rem;
+    }
+
+    .requirements{
+        font-size: 2rem;
+    }
+
+    .context2{
+        background-color: transparent;
+        padding: 50px;
+    }
+
+    .headd{
+        color: var(--color3);
+        font-size: 2.5rem;
+    }
+
+    .section-tittle{
+        font-size: 2rem;
+    }
+
+    .section-text{
+        font-size: 1.7rem;
+    }
+
+    .tab-list-tittle{
+        font-size: 1.7rem;
+    }
+
+    .tab-list{
+        font-size: 1.7rem;
+    }
+
+    .feedback{
+        font-size: 2rem;
+    }
 
 }
